@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# このプロジェクト固有 - 領収書データは公開しない
+ocr_dx_system/data/db/
+ocr_dx_system/data/images/
