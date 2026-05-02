@@ -15,7 +15,7 @@ IMAGE_DIR = BASE_DIR / "data" / "images"
 # --- LM Studio API設定 ---
 LM_STUDIO_BASE_URL = "http://localhost:1234/v1"
 LM_STUDIO_API_KEY = "lm-studio"   # LM Studioは認証不要なのでダミー値でよい
-LM_STUDIO_MODEL = "model"         # LM Studioで実際にロードしているモデル名に合わせて変更する
+LM_STUDIO_MODEL = "qwen/qwen2.5-vl-7b"  # LM Studioでロードするモデル名
 
 # --- OCRリトライ設定 ---
 OCR_MAX_RETRIES = 3       # APIリクエストの最大リトライ回数

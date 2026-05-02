@@ -209,9 +209,6 @@ def build_ui() -> gr.Blocks:
                             type="filepath",
                         )
                         analyze_btn = gr.Button("🔍 解析する", variant="primary")
-                        status_msg  = gr.Textbox(
-                            label="ステータス", interactive=False, lines=2
-                        )
 
                     # 右カラム: 抽出結果フォーム（編集可能）
                     with gr.Column(scale=1):
@@ -231,7 +228,10 @@ def build_ui() -> gr.Blocks:
                             choices=["high", "medium", "low"],
                             value="low",
                         )
-                        save_btn = gr.Button("💾 保存する", variant="primary")
+                        save_btn  = gr.Button("💾 保存する", variant="primary")
+                        status_msg = gr.Textbox(
+                            label="ステータス", interactive=False, lines=2
+                        )
 
                 # 解析ボタン → analyze_image → 各フィールドとステータスに反映
                 analyze_btn.click(
