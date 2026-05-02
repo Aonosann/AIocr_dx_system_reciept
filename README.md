@@ -1,0 +1,2 @@
+# AIocr_dx_system_reciept
+AIOCRを用いて領収書の金額をスキャンしてDB構築し、業務の効率化を図る
